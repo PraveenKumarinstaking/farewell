@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farewell Party 2026 — CSE Department</title>
+  <meta name="description" content="Official farewell celebration of the CSE 2026 Batch. Memories, friendships, and dreams come together for one last time.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+  <!-- Floating Particles Canvas -->
+  <canvas class="particles" id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">CSE 2026</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#event">Event</a></li>
+      <li><a href="#onelasttime">Moments</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#messages">Messages</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">🎓 Farewell 2026</span>
+      <h1>Farewell Party 2026</h1>
+      <h2>Department of Computer Science and Engineering</h2>
+      <div class="hero-quote">
+        "Every ending marks a new beginning.<br>
+        Today we celebrate the journey, the laughter,<br>
+        and the memories that will stay with us forever."
+      </div>
+      <a href="#welcome" class="hero-btn">Explore the Journey ↓</a>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="welcome" id="welcome">
+    <div class="container">
+      <span class="section-tag">🏫 Welcome</span>
+      <h2 class="section-title">Welcome to Our Farewell</h2>
+      <div class="welcome-card">
+        <div class="welcome-emoji">🎉</div>
+        <p>Welcome to the official farewell celebration of the <strong>CSE 2026 Batch</strong>.<br><br>
+        This is not just an event — it's a moment where memories, friendships, and dreams come together for one last time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Details -->
+  <section class="event-details" id="event">
+    <div class="container">
+      <span class="section-tag">📅 Event Details</span>
+      <h2 class="section-title">Mark Your Calendar</h2>
+      <p class="section-subtitle">Join us for a celebration you'll never forget</p>
+      <div class="event-grid">
+        <div class="event-card">
+          <div class="event-icon">📅</div>
+          <h3>Date</h3>
+          <p>02 May 2026</p>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">🕒</div>
+          <h3>Time</h3>
+          <p>9:30 AM onwards</p>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">📍</div>
+          <h3>Venue</h3>
+          <p>Seminar Hall</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- One Last Time -->
+  <section class="one-last-time" id="onelasttime">
+    <div class="container reveal">
+      <span class="section-tag">💙 Memories</span>
+      <h2 class="section-title">One Last Time…</h2>
+      <div class="olt-lines">
+        <div class="olt-line"><span>🚶</span> Walking through the same corridors</div>
+        <div class="olt-line"><span>👫</span> Sitting with the same friends</div>
+        <div class="olt-line"><span>😂</span> Laughing without worrying about tomorrow</div>
+      </div>
+      <div class="olt-closing">
+        These moments may end, but the memories will stay forever.<br>
+        <em>"One Last Time, Together Forever"</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container reveal">
+      <span class="section-tag">📸 Gallery</span>
+      <h2 class="section-title">Memories That Speak Forever</h2>
+      <p class="section-subtitle">From first-year nervous smiles to final-year confidence — every picture tells our story.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/Picsart_26-04-30_14-49-59-209.jpg" alt="Farewell Party Poster" loading="lazy">
+          <div class="overlay"><span>Farewell Poster</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0082.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>Together Forever</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0089.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>Our Batch</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0090.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Friendship Goals</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0096.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>CSE Family</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0095.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Memories</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0094.jpg" alt="College Life" loading="lazy">
+          <div class="overlay"><span>College Days</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0091.jpg" alt="Friends Together" loading="lazy">
+          <div class="overlay"><span>Best Friends</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0084.jpg" alt="Fun Times" loading="lazy">
+          <div class="overlay"><span>Fun Times</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0080.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>Squad</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0079.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Unforgettable</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0078.jpg" alt="College" loading="lazy">
+          <div class="overlay"><span>Golden Days</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0074.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>Together</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0070.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Forever Bond</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0068.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>The Gang</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0066.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Cheers!</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0065.jpg" alt="College Life" loading="lazy">
+          <div class="overlay"><span>Moments</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0064.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Joy</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0063.jpg" alt="Together" loading="lazy">
+          <div class="overlay"><span>Happiness</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0062.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Friends</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0061.jpg" alt="Fun" loading="lazy">
+          <div class="overlay"><span>Smiles</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0060.jpg" alt="Friends Together" loading="lazy">
+          <div class="overlay"><span>Bonding</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0059.jpg" alt="College" loading="lazy">
+          <div class="overlay"><span>Laughter</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0058.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Memories</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0043.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Forever</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0042.jpg" alt="College Life" loading="lazy">
+          <div class="overlay"><span>Life</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0041.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Friendship</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0040.jpg" alt="Together" loading="lazy">
+          <div class="overlay"><span>Unity</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0039.jpg" alt="Group" loading="lazy">
+          <div class="overlay"><span>Crew</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0038.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>All Together</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0036.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Precious</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0026.jpg" alt="Fun Times" loading="lazy">
+          <div class="overlay"><span>Fun</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0025.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Together</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0024.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Vibes</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0023.jpg" alt="College" loading="lazy">
+          <div class="overlay"><span>Campus</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0022.jpg" alt="Fun" loading="lazy">
+          <div class="overlay"><span>Chill</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0021.jpg" alt="Group Photo" loading="lazy">
+          <div class="overlay"><span>Group Photo</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0020.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Buddies</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0019.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Selfie</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0018.jpg" alt="College" loading="lazy">
+          <div class="overlay"><span>Life</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0017.jpg" alt="Fun Times" loading="lazy">
+          <div class="overlay"><span>Good Times</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0016.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Pals</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0015.jpg" alt="Together" loading="lazy">
+          <div class="overlay"><span>Bonds</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0014.jpg" alt="Fun" loading="lazy">
+          <div class="overlay"><span>Joy</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0013.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Laughter</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0012.jpg" alt="College Life" loading="lazy">
+          <div class="overlay"><span>Nostalgia</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0011.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Memories</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0010.jpg" alt="Together" loading="lazy">
+          <div class="overlay"><span>Together</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0009.jpg" alt="Fun" loading="lazy">
+          <div class="overlay"><span>Smile</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0008.jpg" alt="Selfie" loading="lazy">
+          <div class="overlay"><span>Friends Forever</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0007.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Our Story</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0006.jpg" alt="Fun Times" loading="lazy">
+          <div class="overlay"><span>Good Days</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0005.jpg" alt="Group" loading="lazy">
+          <div class="overlay"><span>Group</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0004.jpg" alt="College" loading="lazy">
+          <div class="overlay"><span>Farewell</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0003.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Beginning</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0071.jpg" alt="Friends" loading="lazy">
+          <div class="overlay"><span>Memories</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="photos/IMG-20260430-WA0072.jpg" alt="College Life" loading="lazy">
+          <div class="overlay"><span>Forever</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section" id="video">
+    <div class="container reveal">
+      <span class="section-tag">🎥 Relive</span>
+      <h2 class="section-title">A Journey in Motion</h2>
+      <p class="section-subtitle">Relive the best moments of our college life through this special farewell video.</p>
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0027.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-info">Memory 1</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0028.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 2</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0029.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 3</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0030.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 4</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0031.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 5</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0032.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 6</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0033.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 7</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0034.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 8</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="videos/VID-20260430-WA0035.mp4" type="video/mp4">
+          </video>
+          <div class="video-info">Memory 9</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section class="message-section" id="messages">
+    <div class="container reveal">
+      <span class="section-tag">💬 Guestbook</span>
+      <h2 class="section-title">Leave Your Message 💌</h2>
+      <p class="section-subtitle">Write something you want your friends to remember — a memory, a joke, a thank you, or a goodbye.</p>
+      <form class="message-form" id="messageForm" onsubmit="submitMessage(event)">
+        <input type="text" id="msgName" placeholder="Your Name" required>
+        <textarea id="msgText" placeholder="Write your message here..." required></textarea>
+        <button type="submit">Send Your Message ✨</button>
+      </form>
+      <div class="messages-wall" id="messagesWall"></div>
+    </div>
+  </section>
+
+  <!-- Batch Message -->
+  <section class="batch-message" id="batch">
+    <div class="container reveal">
+      <div class="batch-poem">
+        We came as strangers,<br>
+        We became friends,<br>
+        We leave as a family.
+      </div>
+      <span class="batch-badge">CSE 2026 — Forever United 💙</span>
+    </div>
+  </section>
+
+  <!-- Thank You -->
+  <section class="thankyou" id="thankyou">
+    <div class="container reveal">
+      <span class="section-tag">🙏 Gratitude</span>
+      <h2 class="section-title">Thank You, Teachers</h2>
+      <div class="thankyou-card">
+        <div class="thankyou-emoji">🙏</div>
+        <p>We sincerely thank our beloved faculty members for their guidance, support, and encouragement throughout our journey.<br><br>
+        You didn't just teach us subjects — you taught us life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-heart">Made with ❤️ by Final Year CSE (2026 Batch)</p>
+    <p class="footer-quote">"Once a CSE student, always a CSE family"</p>
+    <div class="footer-taglines">
+      <span>"Goodbyes are not forever"</span>
+      <span>"End of an era, start of a new story"</span>
+      <span>"Memories made, friendships sealed"</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Gallery Image" onclick="event.stopPropagation()">
+    <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next">&#10095;</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Message sent! 💌</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
