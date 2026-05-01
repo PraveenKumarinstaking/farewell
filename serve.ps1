@@ -11,14 +11,15 @@ while ($listener.IsListening) {
     $url = $request.Url.LocalPath
 
     if ($url -eq "/") { $url = "/index.html" }
-
-    $basePath = "c:\Users\student\Desktop\farewell"
+    
+    # Use current directory as base path
+    $basePath = Get-Location
     if ($url.StartsWith("/photos/")) {
         $imageName = $url.Substring(8)
-        $filePath = Join-Path "C:\Users\student\Pictures\party" $imageName
+        $filePath = Join-Path $basePath "photos\$imageName"
     } elseif ($url.StartsWith("/videos/")) {
         $videoName = $url.Substring(8)
-        $filePath = Join-Path "C:\Users\student\Videos\part video" $videoName
+        $filePath = Join-Path $basePath "videos\$videoName"
     } else {
         $filePath = Join-Path $basePath ($url.TrimStart("/"))
     }
