@@ -76,7 +76,7 @@ function animateParticles() {
   }
   requestAnimationFrame(animateParticles);
 }
-animateParticles();
+// animateParticles();
 
 // ── Navbar scroll effect ──
 const navbar = document.getElementById('navbar');
