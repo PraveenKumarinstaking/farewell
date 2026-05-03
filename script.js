@@ -48,7 +48,7 @@ class Particle {
   }
 }
 
-for (let i = 0; i < 60; i++) {
+for (let i = 0; i < 80; i++) {
   particles.push(new Particle());
 }
 
@@ -111,6 +111,16 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 revealElements.forEach(el => revealObserver.observe(el));
+ 
+// ── Hero Mouse Parallax ──
+const heroContent = document.querySelector('.hero-content');
+const heroBg = document.querySelector('.hero-bg');
+window.addEventListener('mousemove', (e) => {
+  const x = (e.clientX / window.innerWidth - 0.5) * 20;
+  const y = (e.clientY / window.innerHeight - 0.5) * 20;
+  if (heroContent) heroContent.style.transform = `translate(${x * 1.5}px, ${y * 1.5}px)`;
+  if (heroBg) heroBg.style.transform = `scale(1.1) translate(${-x}px, ${-y}px)`;
+});
 
 // ── Lightbox with Navigation ──
 let currentLightboxIndex = 0;
